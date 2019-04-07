@@ -11,6 +11,6 @@ m = folium.Map(location = [41.878113, -87.629799], zoom_start = 10, tiles = "car
 m.choropleth(geo_data=vis, data = crimes, columns = ['Community Area', 'count'], fill_color = 'YlGn', key_on = 'feature.properties.area_numbe')
 folium.LayerControl().add_to(m)
 
-m.save('map.html')
+m.save('Output_map.html')
 webbrowser.open(filepath)
 
